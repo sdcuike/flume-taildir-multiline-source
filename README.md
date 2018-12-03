@@ -8,7 +8,7 @@ lineStartRegex: 目前处理的是行内包含的关键词，可以包含多个�
 
 # 例子：
 Flume2KafkaAgent.sources.mysource_wf.type= com.sdcuike.flume.source.taildir.TaildirMultilineSource 
-Flume2KafkaAgent.sources.mysource_wf.lineStartRegex=ERROR:|WARN:
+Flume2KafkaAgent.sources.mysource_wf.lineContains=ERROR:|WARN:
 Flume2KafkaAgent.sources.mysource_wf.channels=mychannel_wf
 Flume2KafkaAgent.sources.mysource_wf.filegroups=f2
 Flume2KafkaAgent.sources.mysource_wf.filegroups.f2=/data/logs/tester/tester.log.wf
