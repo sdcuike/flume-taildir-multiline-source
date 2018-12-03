@@ -186,7 +186,7 @@ public class TailFile {
             Iterable<String> split = Splitter.on("|").trimResults().omitEmptyStrings().split(regex);
             long count = Sets.newHashSet(split).stream().filter(lineContext::contains).count();
 
-            logger.info("=====包含内容信息 {} {}", Sets.newHashSet(split), count);
+            logger.debug("=====包含内容信息 {} {}", Sets.newHashSet(split), count);
 
             if (count <= 0) {
                 totalLine = totalLine + "\n" + lineContext;
