@@ -24,3 +24,7 @@ Flume2KafkaAgent.channels.mychannel_wf.type=memory
 Flume2KafkaAgent.channels.mychannel_wf.capacity=10000 
 Flume2KafkaAgent.channels.mychannel_wf.transactionCapacity=300
 conf/flume.conf (END) 
+
+
+
+# 建议日志采用json格式输出，对后续处理比较方便
